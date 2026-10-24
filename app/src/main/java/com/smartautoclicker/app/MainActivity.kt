@@ -1,4 +1,3 @@
-
 package com.smartautoclicker.app
 
 import android.app.Activity
@@ -57,7 +56,7 @@ class MainActivity : Activity() {
             setHintTextColor(Color.GRAY)
             setTextColor(Color.WHITE)
             textSize = 18f
-            singleLine = true
+            maxLines = 1  // تم التعديل هنا لتتوافق مع الإصدارات الحديثة
             setText(prefs.getString("word", ""))
         }
 
